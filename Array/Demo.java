@@ -1,22 +1,17 @@
 package Array;
 
-public class Demo {
-    static String interpret(String command) {
-//        String s=new String();
-//
-//        for (int i = 0; i < command.length()-1; i++) {
-//            if(command.charAt(i)=='(' & command.charAt(i+1)==')'){
-//                s += '0';
-//            }else{
-//                s+=command.charAt(i);
-//            }
-//        }
-//        return s;
-        return command.replace("()", "o").replace("(al)", "al");
-    }
-
+ class Demo{
+     public void add(int a, int b)
+     {
+         System.out.println(a+b);
+     }
+     private void add(int a, float b)
+     {
+         System.out.println(a+b);
+     }
     public static void main(String[] args) {
-        String str="G()(al)";
-        System.out.println(interpret(str));
+       Demo obj= new Demo();
+       obj.add(10,20f);
+
     }
 }
